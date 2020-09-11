@@ -20,6 +20,13 @@ public class WelcomeScreen extends AppCompatActivity {
 
         welcome.setText("Welcome " + getIntent().getStringExtra("USERNAME"));
     }
+
+    /**
+     * "factory" pattern method implementation to get intent
+     * @param context to context
+     * @param username of user for login in and creating account
+     * @return intent
+     */
     public static Intent getIntent(Context context, String username) {
         Intent intent = new Intent(context, WelcomeScreen.class);
         intent.putExtra("USERNAME", username);

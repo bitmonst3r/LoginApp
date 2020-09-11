@@ -32,6 +32,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * method validates username and password and
+     * if valid user is taken to welcome screen
+     * @param userName for user login and account creation
+     * @param userPassword for user login validation with hardcoded password
+     * @param password user input for login or account creation
+     */
     private void validate(final String userName, String userPassword, EditText password) {
 
         //Welcome Screen Login
